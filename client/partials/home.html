@@ -1,6 +1,12 @@
 <script>
   $(document).ready(function() {
     $('.parallax').parallax();
+    $('.modal').modal({
+      dismissible: true,
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+    });
+
   });
 </script>
 <div id="index-banner" class="parallax-container header-intro">
@@ -9,7 +15,14 @@
       <h1 class="header center blue-text text-lighten-2 shadow">Jake Herman</h1>
       <div class="row center">
         <h5 class="header col s12 light shadow">Full Stack Web Developer</h5> </div>
-      <div class="row center"> <a href="assets/resume/Jake_Herman_Resume.pdf" download="Jake_Herman_Resume.pdf" class="waves-effect light-blue accent-2 btn">Resume</a></div> <br><br> </div>
+      <div class="row center">
+        <a href="#resume" class="waves-effect light-blue accent-2 btn">Resume</a>
+        <a href="assets/resume/Jake_Herman_Resume.pdf" download="Jake_Herman_Resume.pdf" class="waves-effect light-blue accent-2 btn">Download</a></div> <br><br> </div>
+  </div>
+  <div class="modal" id="resume">
+    <div id="modal-content">
+      <img class="modal-img" src="assets/resume/Jake_Herman_Resume.png">
+    </div>
   </div>
   <div class="parallax"><img src="assets/images/background1.jpg" alt="Unsplashed background img 1"></div>
 </div>
@@ -134,11 +147,13 @@
   </div>
   <div class="row center">
     <div class="col s6">
-      <p class="light">Connecting people with similar schedules and hobbies, making it easier to maintain social engagements and commitments. Using optimized SQL queries this application is able to rapidly compile matches based on location with the Google Maps API and user inputted schedules. Implemented MaterializeCSS as a front-end CSS framework.</p>
+      <p class="light">Connecting people with similar schedules and hobbies, making it easier to maintain social engagements and commitments. Using optimized SQL queries this application is able to rapidly compile matches based on location with the Google Maps API and
+        user inputted schedules. Implemented MaterializeCSS as a front-end CSS framework.</p>
       <a class="blue-text" href="http://www.platos.social">Platos.Social</a>
     </div>
     <div class="col s6">
-      <p class="light">A central place for animal shelters to post and keep upto date information about animals at their shelter. With an easy to use front and backend, shelters are able to post images and descriptions of animals, while potential animal adopters have a central location to submit applications for adoptions and fosters to multiple agencies. Built using Ruby on Rails for project at The Coding Dojo.</p>
+      <p class="light">A central place for animal shelters to post and keep upto date information about animals at their shelter. With an easy to use front and backend, shelters are able to post images and descriptions of animals, while potential animal adopters have
+        a central location to submit applications for adoptions and fosters to multiple agencies. Built using Ruby on Rails for project at The Coding Dojo.</p>
       <p class="blue-text light">In Development</p>
     </div>
   </div>
