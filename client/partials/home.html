@@ -2,17 +2,35 @@
   $(document).ready(function() {
     $('.parallax').parallax();
     $('.modal').modal();
+    $('.scrollspy').scrollSpy({
+      scrollOffset:100
+
+    });
   });
 </script>
-<div id="index-banner" class="parallax-container header-intro">
+<div class="navbar-fixed">
+    <nav class="blue lighten-2">
+        <div class="nav-wrapper">
+            <h4 class="brand-logo" style="margin-left:20px;">Jake Herman</h4>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#index-banner">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="index-banner" class="parallax-container header-intro section scrollspy">
   <div class="section no-pad-bot">
     <div class="container"> <br><br>
       <h1 class="header center white-text shadow">Jake Herman</h1>
       <div class="row center">
-        <h5 class="header col s12 light shadow">Full Stack Web Developer</h5> </div>
+        <h5 class="header col s12 white-text shadow">Full Stack Web Developer</h5> </div>
       <div class="row center">
-        <a target="_self" href="#resume" class="waves-effect light-blue accent-2 btn">Resume</a>
-        <a target="_self" href="assets/resume/Jake_Herman_Resume.pdf" download="Jake_Herman_Resume.pdf" class="waves-effect light-blue accent-2 btn">Download</a>
+        <a target="_self" href="#resume" class="waves-effect light-blue lighten-2 btn">Resume</a>
+        <a target="_self" href="assets/resume/Jake_Herman_Resume.pdf" download="Jake_Herman_Resume.pdf" class="waves-effect light-blue lighten-2 btn">Download</a>
       </div>
     </div>
   </div>
@@ -30,7 +48,7 @@
         <h4 class="blue-text text-lighten-2">Who am I?</h4>
         <p>A Full-Stack Web Developer with keen analytical skills, a creative mindset, and a thorough understanding of coding dynamics. Developed proficiency in building and deploying applications in MEAN, Python and Ruby on Rails. Enthusiastic and effective
           communicator seeking to contribute my diverse skill set to an inspiring project and grow as a developer.</p>
-        <h4 class="blue-text text-lighten-2">Skills</h4>
+        <h4 id="skills" class="blue-text text-lighten-2 section scrollspy">Skills</h4>
         <div class="row">
           <div class="col s2">
             <img class="skill-img" src="assets/images/alexa.png" alt="alexa" />
@@ -124,7 +142,7 @@
   </div>
   <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
 </div>
-<div class="container">
+<div id="projects" class="container section scrollspy">
   <div class="row center">
     <div class="col s12">
       <h2 class="header center blue-text">Projects</h2> </div>
@@ -145,12 +163,14 @@
     <div class="col s6">
       <p class="light">Connecting people with similar schedules and hobbies, making it easier to maintain social engagements and commitments. Using optimized SQL queries this application is able to rapidly compile matches based on location with the Google Maps API and
         user inputted schedules. Implemented MaterializeCSS as a front-end CSS framework.</p>
-      <a target="_blank" class="blue-text" href="http://www.platos.social">Platos.Social</a>
+      <a target="_blank" class="blue-text" href="http://www.platos.social"><p>Platos.Social</p></a>
+      <a target="_blank" href="https://github.com/hermanj13/Platos"><img src="assets/images/logo.ico"></a>
     </div>
     <div class="col s6">
       <p class="light">A central place for animal shelters to post and keep upto date information about animals at their shelter. With an easy to use front and backend, shelters are able to post images and descriptions of animals, while potential animal adopters have
         a central location to submit applications for adoptions and fosters to multiple agencies. Built using Ruby on Rails for project at The Coding Dojo.</p>
       <p class="blue-text light">In Development</p>
+      <a target="_blank" href="https://github.com/hermanj13/adoptagram"><img src="assets/images/logo.ico"></a>
     </div>
   </div>
 </div>
@@ -164,7 +184,7 @@
   <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
 </div>
 <footer class="page-footer blue lighten-2">
-  <div class="container">
+  <div id="contact" class="container section scrollspy">
     <div class="row center">
       <div class="col s12">
         <h5 class="white-text">Contact Me</h5>
