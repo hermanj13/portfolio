@@ -5,6 +5,7 @@
     $('.scrollspy').scrollSpy({
       scrollOffset:100
     });
+    $('.tooltipped').tooltip({delay: 50});
   });
 </script>
 <div class="navbar-fixed hide-on-med-and-down">
@@ -15,6 +16,7 @@
                 <li><a href="#index-banner">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#alexa-projects">Alexa Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -22,9 +24,29 @@
 </div>
 
 <div id="index-banner" class="parallax-container header-intro section scrollspy">
-  <div class="section no-pad-bot">
-    <div class="container"> <br><br>
-      <h1 class="header center white-text shadow">Jake Herman</h1>
+  <div class="section no-pad-bot no-pad-top">
+    <div class="container">
+      <div class="col s12">
+        <h1 class="header center white-text shadow">Jake Herman</h1>
+      </div>
+      <div class="row center hide-on-small-only">
+        <div class="col s5">
+        </div>
+        <div class="col s2">
+          <img class="me-img-large circle shadow" src="/assets/images/JakeHermanHeadshot.jpg" />
+        </div>
+        <div class="col s5">
+        </div>
+      </div>
+      <div class="row hide-on-med-and-up">
+        <div class="col s4">
+        </div>
+        <div class="col s4">
+          <img class="me-img-small circle shadow" src="/assets/images/JakeHermanHeadshot.jpg" />
+        </div>
+        <div class="col s4">
+        </div>
+      </div>
       <div class="row center">
         <h5 class="header col s12 white-text shadow">Full Stack Web Developer</h5> </div>
       <div class="row center">
@@ -44,88 +66,112 @@
   <div class="section">
     <div class="row">
       <div class="col s12 center">
-        <h4 class="blue-text text-lighten-2">Who am I?</h4>
+        <h4 class="blue-text text-lighten-2">Who Am I?</h4>
         <p>A Full-Stack Web Developer with keen analytical skills, a creative mindset, and a thorough understanding of coding dynamics. Developed proficiency in building and deploying applications in MEAN, Python and Ruby on Rails. Enthusiastic and effective
           communicator seeking to contribute my diverse skill set to an inspiring project and grow as a developer.</p>
         <h4 id="skills" class="blue-text text-lighten-2 section scrollspy">Skills</h4>
         <div class="row">
           <div class="col s2">
-            <img class="skill-img" src="assets/images/alexa.png" alt="alexa" />
+            <a href="https://developer.amazon.com/alexa" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Amazon Alexa" src="assets/images/alexa.png" alt="alexa" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Amazon Alexa" src="assets/images/alexa.png" alt="alexa" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/angularjs.png" alt="angularJS" />
+            <a href="https://angularjs.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="AngularJS" src="assets/images/angularjs.png" alt="angularJS" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="AngularJS" src="assets/images/angularjs.png" alt="angularJS" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/atom.png" alt="atom" />
+            <a href="https://atom.io/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Atom" src="assets/images/atom.png" alt="atom" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Atom" src="assets/images/atom.png" alt="atom" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/aws.png" alt="AWS" />
+            <a href="https://aws.amazon.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped " data-position="top" data-delay="50" data-tooltip="AWS" src="assets/images/aws.png" alt="AWS" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="AWS" src="assets/images/aws.png" alt="AWS" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/bootstrap.png" alt="bootstrap" />
+            <a href="http://getbootstrap.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Bootstrap" src="assets/images/bootstrap.png" alt="bootstrap" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Bootstrap" src="assets/images/bootstrap.png" alt="bootstrap" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/bower.png" alt="bower" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s2">
-            <img class="skill-img" src="assets/images/django.png" alt="django" />
-          </div>
-          <div class="col s2">
-            <img class="skill-img" src="assets/images/flask.png" alt="flask" />
-          </div>
-          <div class="col s2">
-            <img class="skill-img" src="assets/images/github.png" alt="github" />
-          </div>
-          <div class="col s2">
-            <img class="skill-img" src="assets/images/html5.png" alt="html5" />
-          </div>
-          <div class="col s2">
-            <img class="skill-img" src="assets/images/jquery.png" alt="jQuery" />
-          </div>
-          <div class="col s2">
-            <img class="skill-img" src="assets/images/mamp.png" alt="mamp" />
+            <a href="https://bower.io/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Bower" src="assets/images/bower.png" alt="bower" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Bower" src="assets/images/bower.png" alt="bower" />
           </div>
         </div>
         <div class="row">
           <div class="col s2">
-            <img class="skill-img" src="assets/images/materialize.png" alt="materialize" />
+            <a href="https://www.djangoproject.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Django" src="assets/images/django.png" alt="django" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Django" src="assets/images/django.png" alt="django" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/mongodb.png" alt="mongodb" />
+            <a href="http://flask.pocoo.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Flask" src="assets/images/flask.png" alt="flask" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Flask" src="assets/images/flask.png" alt="flask" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/mysql.png" alt="mysql" />
+            <a href="https://git-scm.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Git" src="assets/images/github.png" alt="github" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Git" src="assets/images/github.png" alt="github" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/nodejs.png" alt="nodejs" />
+            <a href="https://www.w3schools.com/html/html5_intro.asp" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="HTML 5, CSS3, JS" src="assets/images/html5.png" alt="html5" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="HTML 5, CSS3, JS" src="assets/images/html5.png" alt="html5" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/npm.png" alt="npm" />
+            <a href="http://jquery.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="jQuery" src="assets/images/jquery.png" alt="jQuery" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="jQuery" src="assets/images/jquery.png" alt="jQuery" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/postgres.png" alt="postgres" />
+            <a href="https://www.mamp.info/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="MAMP" src="assets/images/mamp.png" alt="mamp" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="MAMP" src="assets/images/mamp.png" alt="mamp" />
           </div>
         </div>
         <div class="row">
           <div class="col s2">
-            <img class="skill-img" src="assets/images/python.png" alt="python" />
+            <a href="http://materializecss.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Materialize" src="assets/images/materialize.png" alt="materialize" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Materialize" src="assets/images/materialize.png" alt="materialize" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/rails.png" alt="rails" />
+            <a href="https://www.mongodb.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="MongoDB" src="assets/images/mongodb.png" alt="mongodb" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="MongoDB" src="assets/images/mongodb.png" alt="mongodb" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/ruby.png" alt="ruby" />
+            <a href="https://www.mysql.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="MySQL" src="assets/images/mysql.png" alt="mysql" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="MySQL" src="assets/images/mysql.png" alt="mysql" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/socket.png" alt="socket" />
+            <a href="https://nodejs.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="NodeJS" src="assets/images/nodejs.png" alt="nodejs" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="NodeJS" src="assets/images/nodejs.png" alt="nodejs" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/terminal.png" alt="terminal" />
+            <a href="https://www.npmjs.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="npm" src="assets/images/npm.png" alt="npm" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="npm" src="assets/images/npm.png" alt="npm" />
           </div>
           <div class="col s2">
-            <img class="skill-img" src="assets/images/vagrant.png" alt="vagrant" />
+            <a href="https://www.postgresql.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="PostgreSQL" src="assets/images/postgres.png" alt="postgres" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="PostgreSQL" src="assets/images/postgres.png" alt="postgres" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s2">
+            <a href="https://www.python.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Python" src="assets/images/python.png" alt="python" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Python" src="assets/images/python.png" alt="python" />
+          </div>
+          <div class="col s2">
+            <a href="http://rubyonrails.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Rails" src="assets/images/rails.png" alt="rails" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Rails" src="assets/images/rails.png" alt="rails" />
+          </div>
+          <div class="col s2">
+            <a href="https://www.ruby-lang.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Ruby" src="assets/images/ruby.png" alt="ruby" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Ruby" src="assets/images/ruby.png" alt="ruby" />
+          </div>
+          <div class="col s2">
+            <a href="https://socket.io/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="socket.io" src="assets/images/socket.png" alt="socket" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="socket.io" src="assets/images/socket.png" alt="socket" />
+          </div>
+          <div class="col s2">
+            <a href="https://en.wikipedia.org/wiki/Terminal_(macOS)" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Terminal" src="assets/images/terminal.png" alt="terminal" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Terminal" src="assets/images/terminal.png" alt="terminal" />
+          </div>
+          <div class="col s2">
+            <a href="https://www.vagrantup.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Vagrant" src="assets/images/vagrant.png" alt="vagrant" /></a>
+            <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Vagrant" src="assets/images/vagrant.png" alt="vagrant" />
           </div>
         </div>
       </div>
@@ -144,32 +190,110 @@
 <div id="projects" class="container section scrollspy">
   <div class="row center">
     <div class="col s12">
-      <h2 class="header center blue-text">Projects</h2> </div>
+      <h2 class="header center blue-text text-darken-2">Projects</h2> </div>
   </div>
   <div class="row center">
     <div class="col s6">
       <h2 class="blue-text hide-on-small-only">Platos</h2>
-      <h4 class="blue-text hide-on-med-and-up">Platos</h4>
-      <a target="_blank" href="http://www.platos.social"><img class="projects-img" src="assets/images/platos.png" alt="platos"></a>
+      <h5 class="blue-text hide-on-med-and-up">Platos</h5>
+      <img class="projects-img center" src="assets/images/platos.png" alt="platos">
     </div>
     <div class="col s6">
       <h2 class="blue-text hide-on-small-only">Adoptagram</h2>
-      <h4 class="blue-text hide-on-med-and-up">Adoptagram</h4>
-      <img class="projects-img" src="assets/images/construction.png" alt="adoptagram">
+      <h5 class="blue-text hide-on-med-and-up">Adoptagram</h5>
+      <img class="projects-img center" src="assets/images/construction.png" alt="adoptagram">
     </div>
   </div>
   <div class="row center">
     <div class="col s6">
       <p class="light">Connecting people with similar schedules and hobbies, making it easier to maintain social engagements and commitments. Using optimized SQL queries this application is able to rapidly compile matches based on location with the Google Maps API and
         user inputted schedules. Implemented MaterializeCSS as a front-end CSS framework.</p>
+    </div>
+    <div class="col s6">
+      <p class="light">A central place for animal shelters to post and keep upto date information about animals at their shelter. With an easy to use front and backend, shelters are able to post images and descriptions of animals, while potential animal adopters have a central location to submit applications for adoptions and fosters to multiple agencies. Built using Ruby on Rails with PostgreSQL.</p>
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s6">
       <a target="_blank" class="blue-text" href="http://www.platos.social"><p>Platos.Social</p></a>
       <a target="_blank" href="https://github.com/hermanj13/Platos"><img src="assets/images/logo.ico"></a>
     </div>
     <div class="col s6">
-      <p class="light">A central place for animal shelters to post and keep upto date information about animals at their shelter. With an easy to use front and backend, shelters are able to post images and descriptions of animals, while potential animal adopters have
-        a central location to submit applications for adoptions and fosters to multiple agencies. Built using Ruby on Rails for project at The Coding Dojo.</p>
       <p class="blue-text light">In Development</p>
       <a target="_blank" href="https://github.com/hermanj13/adoptagram"><img src="assets/images/logo.ico"></a>
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s2">
+    </div>
+    <div class="col s8">
+      <h3 class="blue-text hide-on-small-only">WrdsmthScrapper</h3>
+      <h5 class="blue-text hide-on-med-and-up">WrdsmthScrapper</h5>
+      <img class="center wrdsmth-img" src="assets/images/wrdsmth.png" alt="wrdsmth">
+    </div>
+    <div class="col s2">
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s2">
+    </div>
+    <div class="col s8">
+      <p class="light">Allows for the ability scrape a constantly updating artist website, and to receive both an email and a text once a new product has been added to his store. Built using node, express, firebase, nodemailer, and osmosis.</p>
+    </div>
+    <div class="col s2">
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s2">
+    </div>
+    <div class="col s8">
+      <p class="blue-text light">Github</p>
+      <a target="_blank" href="https://github.com/hermanj13/wrdsmthScrapper2.0"><img src="assets/images/logo.ico"></a>
+    </div>
+    <div class="col s2">
+    </div>
+  </div>
+  <div id="alexa-projects" class="row center scrollspy">
+    <div class="col s12">
+      <h2 class="header center text-darken-3 blue-text">Alexa App Projects</h2> </div>
+  </div>
+  <div class="row center">
+    <div class="col s4">
+      <h3 class="blue-text hide-on-med-and-down">SpaceBro</h3>
+      <h5 class="blue-text hide-on-large-only">SpaceBro</h5>
+    </div>
+    <div class="col s4">
+      <h3 class="blue-text hide-on-med-and-down">DailyBread</h3>
+      <h5 class="blue-text hide-on-large-only">DailyBread</h5>
+    </div>
+    <div class="col s4">
+      <h3 class="blue-text hide-on-med-and-down">FindMeBreakfast</h3>
+      <h5 class="blue-text hide-on-large-only">Alexa Breakfest</h5>
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s4">
+      <p class="light">An Alexa Skills App that randomly provides a new space fact to the user everyday and every time they activate the app. Allows the user to learn fun and new facts about outer space.</p>
+    </div>
+    <div class="col s4">
+      <p class="light">An Alexa Skills App that aids a user to help them discover different food possibilities. By having them follow through a list of prompts and answering what types of food they are in the mood for, it allows for DailyBread to provide a recommendation for a meal.</p>
+    </div>
+    <div class="col s4">
+      <p class="light">An Alexa Skills App that allows a user to find the closest open or 24 hour diner to their current location. Using the Yelp 2.0 API it allows for a search of their area, with a user provided zip code, to locate and hear the nearest diners. Once a user selects a specific one a widget of the location and link appears in their Alexa app.</p>
+    </div>
+  </div>
+  <div class="row center">
+    <div class="col s4">
+      <p class="blue-text light"><a target="_blank" href="https://www.amazon.com/hermanj13-Space-Bro/dp/B071NNTJR2/">Add to Alexa</a></p>
+      <a target="_blank" target="_blank" href="https://github.com/hermanj13/spaceBro"><img src="assets/images/logo.ico"></a>
+    </div>
+    <div class="col s4">
+      <p class="blue-text light"><a target="_blank" href="https://www.amazon.com/hermanj13-Daily-Bread/dp/B073LKBRRJ/">Add to Alexa</a></p>
+      <a target="_blank" target="_blank" href="https://github.com/hermanj13/DailyBread"><img src="assets/images/logo.ico"></a>
+    </div>
+    <div class="col s4">
+      <p class="blue-text light">In Development</p>
+      <a target="_blank" href="https://github.com/hermanj13/FindMeBreakfast"><img src="assets/images/logo.ico"></a>
     </div>
   </div>
 </div>
