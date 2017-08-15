@@ -3,9 +3,69 @@
     $('.parallax').parallax();
     $('.modal').modal();
     $('.scrollspy').scrollSpy({
-      scrollOffset:100
+      scrollOffset:75
     });
     $('.tooltipped').tooltip({delay: 50});
+    var options = [
+      {selector: '.first', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.second', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.third', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.forth', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-first', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-second', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-third', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-forth', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-fifth', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-sixth', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-seventh', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-eighth', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-nineth', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-tenth', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.project-eleventh', offset: 75, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.many-more', offset: 10, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.first-text', offset: 10, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.second-text', offset: 10, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '.footer', offset: 10, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
   });
 </script>
 <div class="navbar-fixed hide-on-med-and-down">
@@ -50,8 +110,8 @@
       <div class="row center">
         <h5 class="header col s12 white-text shadow">Full Stack Web Developer</h5> </div>
       <div class="row center">
-        <a target="_self" href="#resume" class="waves-effect light-blue lighten-2 btn">Resume</a>
-        <a target="_self" href="assets/resume/Jake_Herman_Resume.pdf" download="Jake_Herman_Resume.pdf" class="waves-effect light-blue lighten-2 btn">Download</a>
+        <a target="_self" href="#resume" class="waves-effect waves-light light-blue lighten-2 btn">Resume</a>
+        <a target="_self" href="assets/resume/Jake_Herman_Resume.pdf" download="Jake_Herman_Resume.pdf" class="waves-effect waves-light light-blue lighten-2 btn">Download</a>
       </div>
     </div>
   </div>
@@ -70,8 +130,8 @@
         <p>A Full-Stack Web Developer with keen analytical skills, a creative mindset, and a thorough understanding of coding dynamics. Developed proficiency in building and deploying applications in MEAN, Python and Ruby on Rails. Enthusiastic and effective
           communicator seeking to contribute my diverse skill set to an inspiring project and grow as a developer.</p>
         <h4 id="skills" class="blue-text text-lighten-2 section scrollspy">Skills</h4>
-        <div class="row">
-          <div class="col s2">
+        <div class="row first" style="opacity: 0;">
+          <div class="col s2 first">
             <a href="https://developer.amazon.com/alexa" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Amazon Alexa" src="assets/images/alexa.png" alt="alexa" /></a>
             <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Amazon Alexa" src="assets/images/alexa.png" alt="alexa" />
           </div>
@@ -96,7 +156,7 @@
             <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Bower" src="assets/images/bower.png" alt="bower" />
           </div>
         </div>
-        <div class="row">
+        <div class="row second" style="opacity: 0;">
           <div class="col s2">
             <a href="https://www.djangoproject.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Django" src="assets/images/django.png" alt="django" /></a>
             <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Django" src="assets/images/django.png" alt="django" />
@@ -122,7 +182,7 @@
             <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="MAMP" src="assets/images/mamp.png" alt="mamp" />
           </div>
         </div>
-        <div class="row">
+        <div class="row third" style="opacity: 0;">
           <div class="col s2">
             <a href="http://materializecss.com/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Materialize" src="assets/images/materialize.png" alt="materialize" /></a>
             <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Materialize" src="assets/images/materialize.png" alt="materialize" />
@@ -148,7 +208,7 @@
             <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="PostgreSQL" src="assets/images/postgres.png" alt="postgres" />
           </div>
         </div>
-        <div class="row">
+        <div class="row forth" style="opacity: 0;">
           <div class="col s2">
             <a href="https://www.python.org/" target="_blank" class="hide-on-med-and-down"><img class="skill-img tooltipped" data-position="top" data-delay="50" data-tooltip="Python" src="assets/images/python.png" alt="python" /></a>
             <img class="skill-img tooltipped hide-on-large-only" data-position="top" data-delay="50" data-tooltip="Python" src="assets/images/python.png" alt="python" />
@@ -175,6 +235,11 @@
           </div>
         </div>
       </div>
+      <div class="row center">
+        <div class="col s12">
+          <h4 class="blue-text many-more" style="opacity: 0;">And many more!</h4>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -182,17 +247,17 @@
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">
-        <h5 class="header col s12 white-text shadow">"Develop success from failures. Discouragement and failure are two of the surest stepping stones to success"<br>- Dale Carnegie</h5></div>
+        <h5 class="header col s12 white-text shadow first-text" style="opacity: 0;">"Develop success from failures. Discouragement and failure are two of the surest stepping stones to success"<br>- Dale Carnegie</h5></div>
     </div>
   </div>
   <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
 </div>
 <div id="projects" class="container section scrollspy">
-  <div class="row center">
+  <div class="row center project-first" style="opacity: 0;">
     <div class="col s12">
       <h2 class="header center blue-text text-darken-2">Projects</h2> </div>
   </div>
-  <div class="row center">
+  <div class="row center project-second" style="opacity: 0;">
     <div class="col s6">
       <h2 class="blue-text hide-on-small-only">Platos</h2>
       <h5 class="blue-text hide-on-med-and-up">Platos</h5>
@@ -204,7 +269,7 @@
       <img class="projects-img center" src="assets/images/construction.png" alt="adoptagram">
     </div>
   </div>
-  <div class="row center">
+  <div class="row center project-third" style="opacity: 0;">
     <div class="col s6">
       <p class="light">Connecting people with similar schedules and hobbies, making it easier to maintain social engagements and commitments. Using optimized SQL queries this application is able to rapidly compile matches based on location with the Google Maps API and
         user inputted schedules. Implemented MaterializeCSS as a front-end CSS framework.</p>
@@ -213,7 +278,7 @@
       <p class="light">A central place for animal shelters to post and keep upto date information about animals at their shelter. With an easy to use front and backend, shelters are able to post images and descriptions of animals, while potential animal adopters have a central location to submit applications for adoptions and fosters to multiple agencies. Built using Ruby on Rails with PostgreSQL.</p>
     </div>
   </div>
-  <div class="row center">
+  <div class="row center project-forth" style="opacity: 0;">
     <div class="col s6">
       <a target="_blank" class="blue-text" href="http://www.platos.social"><p>Platos.Social</p></a>
       <a target="_blank" href="https://github.com/hermanj13/Platos"><img src="assets/images/logo.ico"></a>
@@ -223,7 +288,7 @@
       <a target="_blank" href="https://github.com/hermanj13/adoptagram"><img src="assets/images/logo.ico"></a>
     </div>
   </div>
-  <div class="row center">
+  <div class="row center project-fifth" style="opacity: 0;">
     <div class="col s2">
     </div>
     <div class="col s8">
@@ -234,7 +299,7 @@
     <div class="col s2">
     </div>
   </div>
-  <div class="row center">
+  <div class="row center project-sixth" style="opacity: 0;">
     <div class="col s2">
     </div>
     <div class="col s8">
@@ -243,7 +308,7 @@
     <div class="col s2">
     </div>
   </div>
-  <div class="row center">
+  <div class="row center  project-seventh" style="opacity: 0;">
     <div class="col s2">
     </div>
     <div class="col s8">
@@ -253,11 +318,11 @@
     <div class="col s2">
     </div>
   </div>
-  <div id="alexa-projects" class="row center scrollspy">
+  <div id="alexa-projects" class="row center scrollspy project-eighth" style="opacity: 0;">
     <div class="col s12">
       <h2 class="header center text-darken-3 blue-text">Alexa App Projects</h2> </div>
   </div>
-  <div class="row center">
+  <div class="row center project-nineth" style="opacity: 0;">
     <div class="col s4">
       <h3 class="blue-text hide-on-med-and-down">SpaceBro</h3>
       <h5 class="blue-text hide-on-large-only">SpaceBro</h5>
@@ -271,7 +336,7 @@
       <h5 class="blue-text hide-on-large-only">Alexa Breakfest</h5>
     </div>
   </div>
-  <div class="row center">
+  <div class="row center project-tenth" style="opacity: 0;">
     <div class="col s4">
       <p class="light">An Alexa Skills App that randomly provides a new space fact to the user everyday and every time they activate the app. Allows the user to learn fun and new facts about outer space.</p>
     </div>
@@ -282,7 +347,7 @@
       <p class="light">An Alexa Skills App that allows a user to find the closest open or 24 hour diner to their current location. Using the Yelp 2.0 API it allows for a search of their area, with a user provided zip code, to locate and hear the nearest diners. Once a user selects a specific one a widget of the location and link appears in their Alexa app.</p>
     </div>
   </div>
-  <div class="row center">
+  <div class="row center project-eleventh" style="opacity: 0;">
     <div class="col s4">
       <p class="blue-text light"><a target="_blank" href="https://www.amazon.com/hermanj13-Space-Bro/dp/B071NNTJR2/">Add to Alexa</a></p>
       <a target="_blank" target="_blank" href="https://github.com/hermanj13/spaceBro"><img src="assets/images/logo.ico"></a>
@@ -301,12 +366,12 @@
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">
-        <h5 class="header col s12 white-text shadow">“Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.”<br>- Eric S. Raymond</h5> </div>
+        <h5 class="header col s12 white-text shadow second-text" style="opacity: 0;">“Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.”<br>- Eric S. Raymond</h5> </div>
     </div>
   </div>
   <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
 </div>
-<footer class="page-footer blue lighten-2">
+<footer class="page-footer blue lighten-2 footer" style="opacity: 0;">
   <div id="contact" class="container section scrollspy">
     <div class="row center">
       <div class="col s12">
@@ -316,21 +381,21 @@
     <div class="row">
       <div class="col s3 center">
         <a href="mailto:hermanj13@me.com?Subject=Let&#39;s%20Connect"><img class="contact-img" src="assets/images/email.png" alt="email" /></a>
-        <a class="white-text hide-on-med-and-down" href="mailto:hermanj13@me.com?Subject=Let&#39;s%20Connect"><h5>Hermanj13@me.com</h></a>
-        <a class="white-text hide-on-large-only" href="mailto:hermanj13@me.com?Subject=Let&#39;s%20Connect"><h5>Email</h></a>
+        <a class="white-text hide-on-med-and-down" href="mailto:hermanj13@me.com?Subject=Let&#39;s%20Connect"><h5>Hermanj13@me.com</h5></a>
+        <a class="white-text hide-on-large-only" href="mailto:hermanj13@me.com?Subject=Let&#39;s%20Connect"><h5>Email</h5></a>
       </div>
       <div class="col s3 center">
         <a target="_blank" href="http://www.github.com/hermanj13"><img class="contact-img" src="assets/images/github-logo.png" alt="github" /></a>
-        <a target="_blank" class="white-text" href="http://www.github.com/hermanj13"><h5>Github</h></a>
+        <a target="_blank" class="white-text" href="http://www.github.com/hermanj13"><h5>Github</h5></a>
       </div>
       <div class="col s3 center">
         <a target="_blank" href="http://www.linkedin.com/in/jake-herman"><img class="contact-img" src="assets/images/linkedin.png" alt="linkedin" /></a>
-        <a target="_blank" class="white-text" href="http://www.linkedin.com/in/jake-herman"><h5>LinkedIn</h></a>
+        <a target="_blank" class="white-text" href="http://www.linkedin.com/in/jake-herman"><h5>LinkedIn</h5></a>
       </div>
       <div class="col s3 center">
         <a href="tel:+16154286053"><img class="contact-img" src="assets/images/phone.png" alt="phone" /></a>
-        <a class="white-text hide-on-med-and-down" href="tel:+16154286053"><h5>615-428-6053</h></a>
-        <a class="white-text hide-on-large-only" href="tel:+16154286053"><h5>Call</h></a>
+        <a class="white-text hide-on-med-and-down" href="tel:+16154286053"><h5>615-428-6053</h5></a>
+        <a class="white-text hide-on-large-only" href="tel:+16154286053"><h5>Call</h5></a>
       </div>
     </div>
   </div>
