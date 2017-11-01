@@ -68,3 +68,9 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.partnerPicker{
+  margin-top: 5%;
+  max-width: 40vw;
+  max-height: 50vh;
+}
